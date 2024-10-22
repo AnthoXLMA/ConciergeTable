@@ -1,0 +1,13 @@
+<div class="container">
+  <%= simple_form_for [@restaurant, @booking] do |f| %>
+    <div class="container_one">
+      <%= f.input :restaurant_id %>
+      <label for="appt">Choose a day for your reservation:</label>
+      <%= f.input :date %>
+      <label for="appt">Choose a time for your reservation:</label>
+      <%= f.input :time %>
+      <%= f.submit "Book", class: "btn btn-ghost rent" %>
+    </div>
+  <% end %>
+</div>
+

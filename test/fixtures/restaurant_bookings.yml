@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2024-10-22
+  hour: 2024-10-22 11:34:44
+  restaurant: one
+
+two:
+  day: 2024-10-22
+  hour: 2024-10-22 11:34:44
+  restaurant: two
