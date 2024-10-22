@@ -1,0 +1,8 @@
+
+
+<h1><%= link_to 'Home', root_path %></h1>
+
+
+<% @reservations.each do |reservation| %>
+<li><%= reservation.restaurant %></li>
+<% end %>

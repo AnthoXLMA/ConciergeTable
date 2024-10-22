@@ -26,32 +26,3 @@ before_action :load_restaurant, only: [:new, :create]
       params.require(:booking).permit(:date, :time, :restaurant_id)
     end
 end
-
-# before_action :set_booking, only: [:create]
-
-#   def index
-#     @bookings = Booking.all
-#   end
-
-#   def new
-#     @booking = Booking.new
-#   end
-
-#   def create
-#     @booking = Booking.new
-#     @restaurant = Booking.find(params[:restaurant_id])
-#     @booking.restaurant = @restaurant
-#     @booking.save
-#   end
-
-#   private
-
-#   # def set_booking
-#   #   @bookings = Booking.all
-#   #   @booking = Booking.find(params[:id])
-#   # end
-
-#   def bookings_params
-#     params.require(:bookings).permit(:date, :time, :restaurant_id)
-#   end
-# end
