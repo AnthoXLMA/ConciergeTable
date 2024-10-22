@@ -1,0 +1,9 @@
+<h1><%= link_to "Home", root_path %></h1>
+
+<% @bookings.each do | booking | %>
+<p>
+<li><%= booking.restaurant_id %></li>
+<li><%= booking.date %></li>
+<li><%= booking.time %></li>
+</p>
+<% end %>

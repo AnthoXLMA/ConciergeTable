@@ -1,0 +1,11 @@
+<div class="container">
+  <%= simple_form_for [@restaurant_booking] do |f| %>
+    <div class="container_one">
+      <%= f.input :day, as: :date %>
+      <%= f.input :hour, as: :time %>
+      <%= f.input :restaurant_id, as: :restaurant %>
+      <%= f.submit "Book", class: "btn btn-ghost rent" %>
+    </div>
+  <% end %>
+</div>
+
