@@ -1,0 +1,12 @@
+<% @tasks.each do |task| %>
+<div class="container" style="border: solid 1px black; width:300px; height:auto; margin-top:10px;">
+  <p><%= task.nom  %></p>
+  <p><%= task.date_de_demande  %></p>
+  <p><%= task.category  %></p>
+  <p><%= task.nom_du_client  %></p>
+  <p><%= task.description  %></p>
+  <p><%= task.date_d_echeance  %></p>
+</div>
+<% end %>
+
+

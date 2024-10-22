@@ -1,5 +1,3 @@
 class Reservation < ApplicationRecord
-
-RESTAURANT = Restaurant.all
-
+  RESTAURANT = Restaurant.all
 end

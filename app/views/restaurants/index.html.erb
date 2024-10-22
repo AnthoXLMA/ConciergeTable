@@ -3,8 +3,8 @@
 <% @restaurants.each do |restaurant| %>
 
   <div>
-    <%= restaurant.rest_name %>
-    <%= restaurant.city %>
+    <%= restaurant.rest_name.capitalize %>,
+    <%= restaurant.city %>,
     <%= restaurant.id %>
     <%= link_to "Réserver", new_restaurant_booking_path(restaurant)%>
   </div>

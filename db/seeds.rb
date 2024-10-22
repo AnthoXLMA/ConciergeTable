@@ -9,6 +9,12 @@
 #   end
 require 'faker'
 
+puts "Deleting Categories"
+Category.delete_all
+puts "Deleting Guests"
+Guest.delete_all
+puts "Deleting Users"
+User.delete_all
 puts "Deleting Restaurant"
 Restaurant.delete_all
 
@@ -17,7 +23,7 @@ puts 'Creating Restaurants...'
 # @serialized_restaurants = File.read(@restaurantspath)
 # @restaurants = JSON.parse(@serialized_restaurants)
 @all_restaurants = []
-100.times do
+500.times do
 
     @all_restaurants << Restaurant.create(
       rest_name:    Faker::Company.name,
@@ -36,4 +42,28 @@ puts 'Creating Users...'
     @all_users << User.create(
       first_name:    Faker::Name.name
     )
+end
+
+
+puts 'Creating Guests...'
+# @restaurantspath = './db/fixtures/restaurants.json'
+# @serialized_restaurants = File.read(@restaurantspath)
+# @restaurants = JSON.parse(@serialized_restaurants)
+@all_guests = []
+100.times do
+
+    @all_guests << Guest.create(
+      last_name:    Faker::Name.name,
+      first_name:    Faker::Name.name
+    )
+end
+
+
+puts 'Creating Categories...'
+@categoriespath = './db/fixtures/categories.json'
+@serialized_categories = File.read(@categoriespath)
+@categories = JSON.parse(@serialized_categories)
+@all_categories = []
+    @categories.each do |row|
+    @all_categories << Category.create!(title: row['title'])
 end

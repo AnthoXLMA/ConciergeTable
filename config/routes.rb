@@ -13,12 +13,13 @@ Rails.application.routes.draw do
   #   resources :bookings, only: [:new, :create]
   # end
 
-  resources :restaurants, only: [:index, :show]
-  resources :bookings, only: [:index, :show]
-  resources :reservations, only: [:index, :show, :new, :create]
+  resources :restaurants, only:   [:index, :show]
+  resources :bookings, only:      [:index, :show]
+  resources :reservations, only:  [:index, :show, :new, :create]
+  resources :guests, only:        [:index, :show, :new, :create]
+  resources :tasks, only:         [:index, :show, :new, :create]
 
-  resources :restaurants, only: [:index, :show, :new, :create] do
-    resources :bookings, only: [:index, :show, :new, :create]
+  resources :restaurants, only:   [:index, :show, :new, :create] do
+    resources :bookings, only:    [:index, :show, :new, :create]
   end
 end
-
