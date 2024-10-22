@@ -2,12 +2,13 @@
   <%= simple_form_for [@reservation] do |f| %>
     <div class="container_one">
       <%= f.select :restaurant, Reservation::RESTAURANT.map { |r| r.rest_name } %>
-        <%= f.input :jour %>
-        <%= f.input :heure %>
+        <%= f.input :jour, :label => "Jour" %>
+        <%= f.input :heure, :pattern => "([18-22])", :minute_step => 15 %>
         <%= f.input :number_of_guests %>
       <%= f.submit "Book", class: "btn btn-ghost rent" %>
     </div>
   <% end %>
 </div>
+
 
 

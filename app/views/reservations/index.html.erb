@@ -4,5 +4,7 @@
 
 
 <% @reservations.each do |reservation| %>
-<li><%= reservation.restaurant %></li>
+  <li><%= reservation.restaurant %></li>
+  <li><%= reservation.jour %></li>
+  <li><%= reservation.heure %></li>
 <% end %>

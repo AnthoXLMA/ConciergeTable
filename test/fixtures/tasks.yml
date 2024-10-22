@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  date_de_demande: 2024-10-22
+  nom_du_client: MyString
+  description: MyText
+  date_d_echeance: 2024-10-22
+  type: 
+
+two:
+  nom: MyString
+  date_de_demande: 2024-10-22
+  nom_du_client: MyString
+  description: MyText
+  date_d_echeance: 2024-10-22
+  type: 

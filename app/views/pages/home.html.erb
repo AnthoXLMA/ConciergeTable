@@ -1,5 +1,17 @@
-<h2>Bienvenue dans votre Conciergerie</h2>
+<h1>Ma Conciergerie</h1>
 
-<h1><%= link_to "Annuaire des Restaurants", restaurants_path %></h1>
-<h1><%= link_to "Liste de mes tâches", bookings_path %></h1>
-<h1><%= link_to "Liste de mes réservations", new_reservation_path %></h1>
+<h2>TABLEAU DE BORD</h2>
+
+<h3><%= link_to "Annuaire des Restaurants", restaurants_path %></h3>
+<h3><%= link_to "Liste de mes tâches", bookings_path %></h3>
+<h3><%= link_to "Liste de mes réservations", new_reservation_path %></h3>
+<h3><%= link_to "Liste de mes clients", guests_path %></h3>
+
+<h2>Menu des tâches</h2>
+<h3><%= link_to "Ajouter un nouveau client", new_guest_path %></h3>
+<h3><%= link_to "Planifier une tâche", new_task_path %></h3>
+<h3><%= link_to "Réserver un restaurant", new_reservation_path %></h3>
+<h3><%= link_to "Réserver un taxi", new_reservation_path %></h3>
+<h3><%= link_to "Gérer mes types de tâches", tasks_path %></h3>
+
+<h2>ACTUALITES</h2>
