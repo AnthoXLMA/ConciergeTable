@@ -1,1 +1,10 @@
-new.html.erb
+<div class="container">
+  <%= simple_form_for [@hotel, @guest] do |f| %>
+    <div class="container_one">
+      <%= f.input  :last_name %>
+      <%= f.input  :first_name %>
+      <%= f.input  :date_d_arrivee %>
+      <%= f.submit "Créer", class: "btn btn-ghost rent" %>
+    </div>
+  <% end %>
+</div>

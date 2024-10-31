@@ -1,5 +1,5 @@
 <div class="container">
-  <%= simple_form_for [@task] do |f| %>
+  <%= simple_form_for [@guest, @task] do |f| %>
     <div class="container_one">
       <%= f.select :category, Task::CATEGORY.map { |t| t.title } %>
       <%= f.input  :nom %>

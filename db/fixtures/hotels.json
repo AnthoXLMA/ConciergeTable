@@ -1,0 +1,63 @@
+[
+    {
+        "hotel_name": "Chateau la Chenevière",
+        "location": "Port en Bessin",
+        "description": "5 stars Hotel"
+    },
+    {
+        "hotel_name": "Villa Lara",
+        "location": "Bayeux",
+        "description": "5 stars Hotel"
+    },
+    {
+        "hotel_name": "La Sivolière",
+        "location": "Courchevel",
+        "description": "5 stars Hotel"
+    },
+    {
+        "hotel_name": "Manali Lodge",
+        "location": "Courchevel",
+        "description": "5 stars Hotel"
+    },
+        {
+        "hotel_name": "Sezz Hotel",
+        "location": "Saint Tropez",
+        "description": "5 stars Hotel"
+    },
+    {
+        "hotel_name": "Hotel de Paris",
+        "location": "Monaco",
+        "description": "5 stars Hotel"
+    },
+        {
+        "hotel_name": "Ritz",
+        "location": "Paris 8",
+        "description": "5 stars Hotel"
+    },
+    {
+        "hotel_name": "Plaza Athénée",
+        "location": "Paris 8",
+        "description": "5 stars Hotel"
+    },
+        {
+        "hotel_name": "Grands Powers",
+        "location": "Paris Opéra 8ème",
+        "description": "5 stars Hotel"
+    },
+    {
+        "hotel_name": "Snow Lodge Hotel",
+        "location": "Courchevel",
+        "description": "5 stars Hotel"
+    },
+        {
+        "hotel_name": "Terrass' Hotel",
+        "location": "Paris Montmartre",
+        "description": "5 stars Hotel"
+    },
+    {
+        "hotel_name": "Paris Océania Hotels",
+        "location": "Issy Les Moulineaux",
+        "description": "4 stars Hotel"
+    }
+
+]

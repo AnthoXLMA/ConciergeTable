@@ -1,0 +1,39 @@
+[
+    {
+        "last_name" : "Mania",
+        "first_name" :"",
+        "date_d_arrivee": "",
+        "hotel_id": 1
+    },
+    {
+        "last_name" : "Tyrode",
+        "first_name" :"",
+        "date_d_arrivee": "",
+        "hotel_id": 3
+    },
+    {
+        "last_name" : "Rambie",
+        "first_name" :"",
+        "date_d_arrivee": "",
+        "hotel_id": 4
+    },
+    {
+        "last_name" : "Louya",
+        "first_name" :"",
+        "date_d_arrivee": "",
+        "hotel_id": 2
+    },
+    {
+        "last_name" : "Halley",
+        "first_name" :"",
+        "date_d_arrivee": "",
+        "hotel_id": 4
+    },
+    {
+        "last_name" : "Microsoft",
+        "first_name" :"",
+        "date_d_arrivee": "",
+        "hotel_id": 2
+    }
+  ]
+

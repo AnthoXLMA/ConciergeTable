@@ -1,5 +1,89 @@
-<% @tasks.each do |task| %>
+
+<div class="container" style=" border: solid 1px black; width:300px; height:auto; margin-top:10px;">
+  <p>
+  <h2>HIER</h2>
+    <% @yesterday_tasks.each do | yesterday_task | %>
+    <%= yesterday_task.nom_du_client %>
+    <%= link_to 'Détails', task_path(yesterday_task) %>
+  <% end %>
+  </p>
+</div>
+
+<div class="container" style=" border: solid 1px black; width:fit-content; height:auto; margin-top:10px;">
+  <p>
+  <h2>AUJOURD'HUI</h2>
+  <% @today_tasks.each do | today_task | %>
+    <div class="card" style="background-color: grey; border: solid 1px black;width:600px; height:auto; margin-top:10px; padding:10px;">
+      <p>
+        <%= today_task.nom_du_client %>
+        <%= today_task.category %>
+        <%= link_to 'Détails', task_path(today_task) %>
+      </p>
+          <%= link_to 'ajouter une trace', new_task_comment_path(today_task) %>
+      <p>
+        <a>Historique de la tâche</a>
+        <% today_task.comments.each do |comment| %>
+        <div class="text-input" style="background-color: white; height:auto; margin-top:10px; padding:10px;">
+          <%= comment.review %>
+          <%= comment.created_at %>
+        </div>
+          <% end %>
+      </p>
+    </div>
+  <% end %>
+  </p>
+</div>
+
 <div class="container" style="border: solid 1px black; width:300px; height:auto; margin-top:10px;">
+  <p>
+  <h3>DEMAIN</h3>
+  <% @tomorrow_tasks.each do | tomorrow_task | %>
+  <p><%= tomorrow_task.nom_du_client %> - <%= tomorrow_task.category %>
+    <%= link_to 'Détails', task_path(tomorrow_task) %>
+
+  </p>
+  <% end %>
+  </p>
+</div>
+
+<div class="container" style="border: solid 1px black; width:300px; height:auto; margin-top:10px;">
+  <p>
+  J-7
+  <% @dless_seven_tasks.each do | dless_seven_task | %>
+  <%= dless_seven_task.nom_du_client %>
+  <% end %>
+  </p>
+</div>
+
+
+<div class="container" style="border: solid 1px black; width:300px; height:auto; margin-top:10px;">
+  J-15
+  <% @dless_fifteen_tasks.each do | dless_fifteen_task | %>
+  <%= dless_seven_task.nom_du_client %>
+  <% end %>
+  </p>
+</div>
+
+
+<div class="container" style="border: solid 1px black; width:300px; height:auto; margin-top:10px;">
+  <p>
+  J-30
+  <% @dless_thirty_tasks.each do | dless_thirty_task | %>
+  <%= dless_thirty_task.nom_du_client %>
+  <% end %>
+  </p>
+</div>
+
+<h2>Task Index</h2>
+<% @tasks.each do |task| %>
+<div class="container" style="background-color: orange; border: solid 1px black; width:300px; height:auto; margin-top:10px;">
+  <p><%= task.date_d_echeance %> - <%= task.nom_du_client  %></p>
+</div>
+<% end %>
+
+<h2>Chronology</h2>
+<% @tasks_chronology.each do |task| %>
+<div class="container" style="background-color: grey; border: solid 1px black; width:300px; height:auto; margin-top:10px;">
   <p><%= task.nom  %></p>
   <p><%= task.date_de_demande  %></p>
   <p><%= task.category  %></p>
@@ -8,5 +92,4 @@
   <p><%= task.date_d_echeance  %></p>
 </div>
 <% end %>
-
 

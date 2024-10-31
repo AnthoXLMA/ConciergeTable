@@ -1,1 +1,14 @@
-show.html.erb
+
+<% @tasks.each do |task| %>
+  <p>
+    <%= @task.nom %>
+    <%= @task.nom_du_client %>
+    <%= @task.description %>
+    <%= @task.date_d_echeance %>
+    <%= @task.category %>
+  </p>
+<% end %>
+
+
+  <br>
+  <%= link_to 'Retour au client', guest_path(@guest) %>

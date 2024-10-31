@@ -1,0 +1,11 @@
+<div class="container">
+  <%= simple_form_for [@task, @comment] do |f| %>
+    <div class="container_one">
+        <%= f.input :review %>
+      <%= f.submit "Envoyer", class: "btn btn-ghost rent" %>
+    </div>
+  <% end %>
+</div>
+
+
+
