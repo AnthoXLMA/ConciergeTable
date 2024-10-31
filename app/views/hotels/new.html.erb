@@ -1,0 +1,10 @@
+<div class="container">
+  <%= simple_form_for [@hotel] do |f| %>
+    <div class="container_one">
+      <%= f.input  :hotel_name %>
+      <%= f.input  :location %>
+      <%= f.input  :description %>
+      <%= f.submit "Ajouter la tâche", class: "btn btn-ghost rent" %>
+    </div>
+  <% end %>
+</div>

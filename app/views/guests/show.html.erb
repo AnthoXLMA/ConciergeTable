@@ -1,1 +1,15 @@
-show.html.erb
+<p><%= @guest.last_name.upcase %> <%= @guest.first_name %></p>
+<%= link_to 'ajouter une tâche',  new_guest_task_path(@guest) %>
+
+
+<% @guest_tasks.each do |guest_task| %>
+<div>
+  <%= guest_task.nom %>
+  <%= guest_task.nom_du_client %>
+  <%= guest_task.description %>
+  <%= guest_task.date_d_echeance %>
+  <%= guest_task.category %>
+  <%= guest_task.id %>
+  <%= link_to 'Détails', guest_task_path(guest_task: guest_task.id) %>
+</div>
+<% end %>

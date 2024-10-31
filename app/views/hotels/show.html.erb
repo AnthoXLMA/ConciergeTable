@@ -1,0 +1,18 @@
+<%= @hotel.hotel_name %>
+<%= @hotel.location %>
+<%= @hotel.description %>
+
+<p>
+  <a><%= link_to "Modifier l'hôtel", edit_hotel_path(@hotel), method: :patch %></a>
+  <a><%= link_to "Ajouter un client", new_hotel_guest_path(@hotel) %></a>
+  <a><%= link_to "Hotels Index", hotels_path %></a>
+  <a><%= link_to "Supprimer cet hôtel", hotel_path(@hotel), method: :delete %></a>
+</p>
+
+<% @hotel_guests.each do |hotel_guest| %>
+<div>
+  <%= hotel_guest.last_name %>
+  <%= hotel_guest.first_name %>
+  <%= link_to 'Détails du client', guest_path(hotel_guest) %>
+</div>
+<% end %>

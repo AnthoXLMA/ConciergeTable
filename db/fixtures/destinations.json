@@ -1,0 +1,18 @@
+[
+  {
+      "site": "Normandy",
+      "description": "Plages du débarquement, Omaha Beach, Sainte Mère l'Eglise, Mont Saint Michel"
+  },
+  {
+      "site": "Paris",
+      "description": "La ville Lumière"
+  },
+  {
+      "site": "French Riviera",
+      "description": "Nice, Cannes, Saint Tropez"
+  },
+  {
+      "site": "Loire Valley",
+      "description":" Le charme des châteaux de la Loire"
+  }
+]

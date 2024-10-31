@@ -1,11 +1,27 @@
-<h1>Ma Conciergerie</h1>
+
+<h1>BIENVENUE</h1>
+
+<h1>Butler Desk</h1>
+
+<p>Vous êtes un hôtel</p>
+<p>Vous êtes un concierge indépendant</p>
+<p>Vous êtes un agent de voyage</p>
+<p>Vous êtes un visiteur</p>
 
 <h2>TABLEAU DE BORD</h2>
-
-<h3><%= link_to "Annuaire des Restaurants", restaurants_path %></h3>
-<h3><%= link_to "Liste de mes tâches", bookings_path %></h3>
+<h3><%= link_to "Task Agenda", tasks_path %></h3>
 <h3><%= link_to "Liste de mes réservations", new_reservation_path %></h3>
 <h3><%= link_to "Liste de mes clients", guests_path %></h3>
+
+<h2>ACTUALITES</h2>
+<% @today_tasks.each do | today_task | %>
+  <div class="task-card" style="border: solid 1px black; width: 300px; height: 100px;">
+    <p>
+      <%= today_task.nom_du_client %>
+      <%= today_task.category %>
+    </p>
+  </div>
+<% end %>
 
 <h2>Menu des tâches</h2>
 <h3><%= link_to "Ajouter un nouveau client", new_guest_path %></h3>
@@ -13,5 +29,8 @@
 <h3><%= link_to "Réserver un restaurant", new_reservation_path %></h3>
 <h3><%= link_to "Réserver un taxi", new_reservation_path %></h3>
 <h3><%= link_to "Gérer mes types de tâches", tasks_path %></h3>
+<h3><%= link_to "Hôtels", hotels_path %></h3>
+<h3><%= link_to "Restaurants", restaurants_path %></h3>
+<h3><%= link_to "Destinations", destinations_path %></h3>
 
-<h2>ACTUALITES</h2>
+<h2>ACTUALITES</h2> - <h2>TARIFS</h2>
